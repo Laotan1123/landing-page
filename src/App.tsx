@@ -30,7 +30,7 @@ function App() {
         payload.append(key, value);
       });
 
-      const response = await fetch(scriptURL, {
+      await fetch(scriptURL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: payload.toString()
